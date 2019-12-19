@@ -1,0 +1,7 @@
+<!--module/stepper.wxml-->
+
+<view class='d-flex align-center'>
+  <view class='btn sub {{_isMin?"disable":""}}' bindtap='_sub'><image src="{{_sub_src}}" mode="aspectFit" style="width: 40rpx; height: 40rpx;" /></view>
+  <input class='count d-flex justify-content-center align-center fs-28' type="number" value="{{_count}}" bindinput="_countChange" />
+  <view class='btn add {{_isMax?"disable":""}}' bindtap='_add'><image src="{{_add_src}}" mode="aspectFit" style="width: 40rpx; height: 40rpx;" /></view>
+</view>

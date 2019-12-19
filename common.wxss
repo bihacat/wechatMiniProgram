@@ -1,0 +1,153 @@
+/* 
+ * bootstrap形式
+ * 注: 单位为rpx
+ * 持续更新
+ */
+.full-height {
+    height: 100%;
+}
+.full-width {
+    width: 100%;
+}
+.fs-20 {
+    font-size: 20rpx;
+}
+
+.fs-24 {
+    font-size: 24rpx;
+}
+
+.fs-28 {
+    font-size: 28rpx;
+}
+
+.fs-30 {
+    font-size: 30rpx;
+}
+
+.fs-32 {
+    font-size: 32rpx;
+}
+
+.fs-36 {
+    font-size: 36rpx;
+}
+
+.fs-40 {
+    font-size: 40rpx;
+}
+.fw-100 {
+    font-weight: 100;
+}
+.fw-200 {
+    font-weight: 200;
+}
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.cl-000 {
+    color: #000000;
+}
+
+.cl-333 {
+    color: #333333;
+}
+
+.cl-666 {
+    color: #666666;
+}
+
+.cl-999 {
+    color: #999999;
+}
+
+.cl-fff {
+    color: #ffffff;
+}
+
+.br-8 {
+    border-radius: 8rpx;
+}
+
+.br-16 {
+    border-radius: 16rpx;
+}
+
+.br-32 {
+    border-radius: 32rpx;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+.no-border {
+    border: none !important;
+}
+/* 隐藏滚动条,用于部分需要横向滚动的情况 */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+image {
+    display: block;
+}

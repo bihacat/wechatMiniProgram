@@ -1,0 +1,2 @@
+<!--components/fit-ipx/fit-ipx.wxml-->
+<view style="{{isIpx?'height: 34px':''}}"></view>

@@ -1,0 +1,19 @@
+/* module/stepper.wxss */
+@import '../../app.wxss';
+.btn {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.count {
+  text-align: center;
+  width: 50rpx;
+  margin: 0 10rpx;
+}
+.disable {
+  color: lightgray;
+}
+.btn>image {
+  width: 100%;
+  height: 100%;
+}
