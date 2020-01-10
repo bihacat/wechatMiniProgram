@@ -3,12 +3,7 @@
  * 注: 单位为rpx
  * 持续更新
  */
-.full-height {
-    height: 100%;
-}
-.full-width {
-    width: 100%;
-}
+
 .fs-20 {
     font-size: 20rpx;
 }
@@ -72,10 +67,6 @@
 
 .cl-999 {
     color: #999999;
-}
-
-.cl-fff {
-    color: #ffffff;
 }
 
 .br-8 {
@@ -147,7 +138,4 @@
 /* 隐藏滚动条,用于部分需要横向滚动的情况 */
 .no-scrollbar::-webkit-scrollbar {
     display: none;
-}
-image {
-    display: block;
 }
