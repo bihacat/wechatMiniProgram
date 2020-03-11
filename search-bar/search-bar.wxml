@@ -10,6 +10,7 @@
             focus="{{focus}}"
             auto-focus="{{autoFocus}}"
             class="search-input cl-333 fs-28"
+            placeholder-style="color: {{holdercolor}}"
         ></input>
         <view class="clear-input-btn" wx:if="{{value.length>0}}" catchtap="clearInputAction">
             <image style="width: 28rpx; height: 28rpx;"

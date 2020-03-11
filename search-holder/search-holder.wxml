@@ -4,6 +4,6 @@
         bindtap="tap"
         style="background-color: {{backgroundcolor}}">
         <image src="search.png" style="width: 30rpx; height: 30rpx;"></image>
-        <text class="cl-aaa fs-28" style="margin-left: 24rpx;">{{text}}</text>
+        <text class="fs-28" style="margin-left: 24rpx; color: {{textcolor}}">{{text}}</text>
     </view>
 </view>

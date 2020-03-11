@@ -1,8 +1,7 @@
 /* components/search-bar/search-bar.wxss */
 @import "/common.wxss";
-.search {
 
-}
+
 .search>.bar {
     height: 60rpx;
     border-radius:30px;

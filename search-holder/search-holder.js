@@ -5,6 +5,7 @@ Component({
      */
     properties: {
         text: String,
+        textcolor: {type: String, value: "#aaaaaa"},
         backgroundcolor: { type: String, value: "#EEF0F4", }
     },
 

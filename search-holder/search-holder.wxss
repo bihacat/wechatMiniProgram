@@ -5,6 +5,3 @@
     height: 60rpx;
     border-radius:30px;
 }
-.search {
-    margin-bottom: 40rpx;
-}

@@ -5,11 +5,15 @@ stepper: 小程序步进器
 util.js: 工具类
 ```
 
+**使用组件时，必须将common.wxss放于工程根目录下**
+---
+
 1. [util](#util)
 2. [search-holder](#search-holder)
 3. [search-bar](#search-bar)
 
 <div id="util"></div>
+
 # util.js 
 
 [navigate:一行代码跳转路由](https://www.bihacat.com/detail/18)
