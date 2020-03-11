@@ -5,9 +5,9 @@ stepper: 小程序步进器
 util.js: 工具类
 ```
 
-[util](#util)
-[search-holder](#search-holder)
-[search-bar](#search-bar)
+1. [util](#util)
+2. [search-holder](#search-holder)
+3. [search-bar](#search-bar)
 
 <div id="util"></div>
 # util.js 
