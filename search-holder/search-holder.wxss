@@ -3,7 +3,6 @@
 
 .search>.bar {
     height: 60rpx;
-    background:rgba(238,240,244,1);
     border-radius:30px;
 }
 .search {

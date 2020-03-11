@@ -4,13 +4,12 @@ Component({
      * 组件的属性列表
      */
     properties: {
-        style: String,
         placeholder: String, // input的placeholder
         value: String, // input中的值
         tintcolor: String, // 搜索按钮的颜色
         textcolor: String, // input文字颜色
         holdercolor: String, // placeholder颜色
-        backgroundcolor: String, // input背景色
+        backgroundcolor: {type: String, value: "#EEF0F4", }, // input背景色
         focus: Boolean, // input是否焦点
         autofocus: Boolean, // 是否自动焦点
     },
