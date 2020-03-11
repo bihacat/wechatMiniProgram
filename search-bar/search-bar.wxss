@@ -1,0 +1,32 @@
+/* components/search-bar/search-bar.wxss */
+@import "/common.wxss";
+.search {
+
+}
+.search>.bar {
+    height: 60rpx;
+    border-radius:30px;
+    padding-left: 24rpx;
+    flex: 1;
+}
+.search-input {
+    flex: 1;
+}
+.search-btn {
+    width: 93rpx;
+    text-align: right;
+    height: 60rpx;
+    color: #2973FA;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.clear-input-btn {
+    height: 60rpx;
+    margin-right: 10rpx;
+    width: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

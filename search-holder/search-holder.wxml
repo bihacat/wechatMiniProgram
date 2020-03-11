@@ -1,0 +1,8 @@
+<!--components/search-holder/search-holder.wxml-->
+<view class="search">
+    <view class="bar d-flex align-center justify-content-center"
+        bindtap="tap">
+        <image src="search.png" style="width: 30rpx; height: 30rpx;"></image>
+        <text class="cl-aaa fs-28" style="margin-left: 24rpx;">{{text}}</text>
+    </view>
+</view>

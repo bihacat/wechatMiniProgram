@@ -1,0 +1,20 @@
+<!--components/search-bar/search-bar.wxml-->
+<view class="search d-flex align-center">
+    <view class="bar d-flex align-center" style="background-color: {{backgroundcolor}};">
+        <image src="search.png" style="width: 30rpx; height: 30rpx; margin-right: 24rpx;"></image>
+        <input value="{{value}}" 
+            bindinput="searchInputing" 
+            bindfocus="searchFocus" 
+            bindconfirm="searchAction"
+            placeholder="{{placeholder}}" 
+            focus="{{focus}}"
+            auto-focus="{{autoFocus}}"
+            class="search-input cl-333 fs-28"
+        ></input>
+        <view class="clear-input-btn" wx:if="{{value.length>0}}" catchtap="clearInputAction">
+            <image style="width: 28rpx; height: 28rpx;"
+                src="clear.png"></image>
+        </view>
+    </view>
+    <view class="search-btn" bindtap="searchAction">搜索</view>
+</view>
