@@ -11,6 +11,7 @@ util.js: 工具类
 
 <div id="util"></div>
 # util.js 
+
 [navigate:一行代码跳转路由](https://www.bihacat.com/detail/18)
 post:网络请求
 
@@ -19,9 +20,11 @@ post:网络请求
 # search-holder
 
 效果
+
 ![](https://img.bihacat.com/components/search-holder/338318AE706059DC0171D3C7E87AAFC6.jpg)
 
 使用方法
+
 ![](https://img.bihacat.com/components/search-holder/7499521B9F49E5100B2EA04DDA2F3981.jpg)
 
 |属性|类型|默认值|备注|
@@ -36,10 +39,13 @@ post:网络请求
 <div id="search-bar"></div>
 
 # search-bar
+
 效果
+
 ![](https://img.bihacat.com/components/search-bar/80811583895697_.pic.jpg)
 
 使用方法
+
 ![](https://img.bihacat.com/components/search-bar/80801583895697_.pic.jpg)
 
 
