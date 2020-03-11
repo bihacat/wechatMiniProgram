@@ -46,7 +46,7 @@ post:网络请求
 
 使用方法
 
-![](https://img.bihacat.com/components/search-bar/80801583895697_.pic.jpg)
+![](https://img.bihacat.com/components/search-bar/search-bar-code.png)
 
 
 |属性|类型|默认值|备注|
