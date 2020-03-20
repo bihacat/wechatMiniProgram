@@ -242,3 +242,17 @@
 .pb-24 {
     padding-bottom: 24rpx;
 }
+
+.flex-1 {
+    flex: 1;
+}
+.bg-fff {
+    background-color: white;
+}
+
+.border-bottom-32 {
+    border-bottom: 16rpx #e5e5e5 solid;
+}
+.border-bottom-1 {
+    border-bottom: 1rpx #e5e5e5 solid;
+}

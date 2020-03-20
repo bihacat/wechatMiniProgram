@@ -19,6 +19,12 @@ function navigate(e) {
   });
 }
 
+function navigateWithParam(params) {
+  wx.navigateTo({
+    url: formatUri(params),
+  })
+}
+
 function post(info) {
   wx.request({
       url: info.uri,
@@ -28,14 +34,27 @@ function post(info) {
           info.success(result.data);
       },
       fail: ()=>{},
-      complete: ()=>{}
+      complete: ()=>{
+        wx.hideLoading();
+      }
   });
 }
 
+function isIpx() {
+  var systemInfo = wx.getSystemInfoSync();
+  console.log(systemInfo.safeArea.top == 44 ? 'isIpx' : 'notIpx')
+  if (systemInfo.safeArea.top == 44) {
+      return true;
+  }
+  return false;
+}
+
 module.exports = {
-  formatUri: formatUri,
-  navigate: navigate,
-  post: post,
+  formatUri,
+  navigate,
+  post,
+  isIpx,
+  navigateWithParam,
 }
 
 Date.prototype.format = function (fmt) {
