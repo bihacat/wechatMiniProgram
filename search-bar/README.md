@@ -1,5 +1,7 @@
 # search-bar
 
+**使用组件时，必须将common.wxss放于工程根目录下**
+
 ### 效果
 
 ![](https://img.bihacat.com/components/search-bar/80811583895697_.pic.jpg)

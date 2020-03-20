@@ -1,5 +1,7 @@
 # search-holder
 
+**使用组件时，必须将common.wxss放于工程根目录下**
+
 ### 效果
 
 ![](https://img.bihacat.com/components/search-holder/338318AE706059DC0171D3C7E87AAFC6.jpg)
