@@ -1,6 +1,4 @@
 /* components/search-bar/search-bar.wxss */
-@import "/common.wxss";
-
 
 .search>.bar {
     height: 60rpx;
@@ -28,4 +26,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.cl-333 {
+    color: #333333;
+}
+
+.fs-28 {
+    font-size: 28rpx;
 }

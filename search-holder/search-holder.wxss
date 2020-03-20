@@ -1,7 +1,23 @@
 /* components/search-holder/search-holder.wxss */
-@import "/common.wxss";
 
 .search>.bar {
     height: 60rpx;
     border-radius:30px;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.fs-28 {
+    font-size: 28rpx;
 }

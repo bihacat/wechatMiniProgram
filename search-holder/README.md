@@ -1,7 +1,5 @@
 # search-holder
 
-**使用组件时，必须将common.wxss放于工程根目录下**
-
 [下载地址](https://github.com/bihacat/wechatMiniProgram/releases)
 
 ### 效果
