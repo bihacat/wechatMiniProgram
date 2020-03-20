@@ -11,6 +11,12 @@ function formatUri(dataset) {
   return uri
 }
 
+/**
+ * 使用wxml上的参数跳转页面, 例
+ * wxml: <view bindtap="tapAction"></view>
+ * js: tapAction(e){util.navigate(e)}
+ * @param {Object} e - bindtap绑定函数的event,例如: tapAction(e){util.navigate(e)},直接将e传入即可
+ */
 function navigate(e) {
   let dataset = e.currentTarget.dataset;
   let uri = formatUri(dataset);
@@ -19,12 +25,40 @@ function navigate(e) {
   });
 }
 
+/**
+ * 自定义参数跳转页面
+ * @param {Object} params - 跳转时携带的参数,必须携带uri
+ * @param {string} params.uri - 必须携带,要跳转的页面链接,例:"/pages/index/index"
+ */
 function navigateWithParam(params) {
   wx.navigateTo({
     url: formatUri(params),
   })
 }
 
+/**
+ * 发送GET请求
+ * @param {Object} options - 发送的参数
+ * @param {string} options.uri - 请求的url
+ * @param {string} options.data - 请求的参数
+ */
+function get(options) {
+  wx.request({
+    url: options.uri,
+    data: options.data,
+    method: 'GET',
+    success: (result) => {
+        options.success(result.data);
+    },
+    fail: () => {},
+    complete: () => {},
+  })
+}
+
+/**
+ * 发送POST请求
+ * @param {Object} info 发送的参数
+ */
 function post(info) {
   wx.request({
       url: info.uri,
@@ -40,6 +74,9 @@ function post(info) {
   });
 }
 
+/**
+ * 判断是否是iPhone X/iPhone XS等带有下巴的iPhone手机
+ */
 function isIpx() {
   var systemInfo = wx.getSystemInfoSync();
   console.log(systemInfo.safeArea.top == 44 ? 'isIpx' : 'notIpx')
@@ -53,10 +90,14 @@ module.exports = {
   formatUri,
   navigate,
   post,
+  get,
   isIpx,
   navigateWithParam,
 }
 
+/**
+ * 格式化时间戳
+ */
 Date.prototype.format = function (fmt) {
     var o = {
         "M+": this.getMonth() + 1, //月份 
