@@ -1,0 +1,3 @@
+<!--components/login-cover/login-cover.wxml-->
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="login {{showLogin?'button':'hidden'}}"></button>
+<button wx:if="{{showPhone}}" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="phone {{showPhone?'button':'hidden'}}"></button>
