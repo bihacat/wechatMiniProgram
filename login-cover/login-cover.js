@@ -33,12 +33,14 @@ Component({
      */
     methods: {
         getUserInfo(e) {
+
             let that = this;
             util.login(e, function () {
                 that.judgeShow();
             });
         },
         getPhoneNumber(e) {
+            
             let that = this;
             wx.login({
               complete: (res) => {
@@ -60,8 +62,12 @@ Component({
             let userinfo = wx.getStorageSync(this.data.loginKey);
             this.setData({
                 showLogin: userinfo.length == 0,
-                showPhone: !userinfo[this.data.phoneKey] || userinfo[this.data.phoneKey].length==0,
             })
+            if (this.data.showPhone) {
+                this.setData({
+                    showPhone: !userinfo[this.data.phoneKey] || userinfo[this.data.phoneKey].length==0,
+                })
+            }
         },
     }
 })
