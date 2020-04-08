@@ -2,16 +2,17 @@
 
 目录
 
-- [navigate](#navigate)
-- [navigateWithParam](#navigateWithParam)
-- [isIpx](#idIpx)
-- [Date.format](#Date.format)
+- [navigate](#navigate) 一行代码跳转页面
+- [navigateWithParam](#navigateWithParam) 一行代码跳转页面
+- [isIpx](#idIpx) 判断是不是iPhone X
+- [Date.format](#Date.format) 格式化日期时间戳
 
 <div id="navigate"></div>
 
 ### navigate()
 
 一行代码跳转小程序页面，使用方法
+
 **以这种方式跳转，wxml标签上必须带data-uri属性，否则无法跳转**
 ``` html 
 <!--Page1.wxml-->
@@ -47,6 +48,7 @@ Page({
 ### navigateWithParam
 
 navigate的扩展方法，js自定义参数跳转页面
+
 **以这种方式跳转，参数中必须带uri，否则无法跳转**
 
 ``` html
@@ -81,6 +83,8 @@ Page({
 
 ### isIpx()
 
+判断是否是iPhone X
+
 ``` js
 import util from "../path/to/your/util";
 Page({
@@ -93,6 +97,8 @@ Page({
 <div id="Date.format"></div>
 
 ### Date.format()
+
+格式化时间戳
 
 ``` js
 import util from "../path/to/your/util";
