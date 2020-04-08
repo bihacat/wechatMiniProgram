@@ -159,6 +159,22 @@
     text-align: center;
 }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
 .p-relative {
     position: relative;
 }
@@ -185,103 +201,12 @@
     display: flex;
 }
 
-/**
- * 常用的24rpx和30rpx距离
- */
-.mg-30 {
-    margin: 30rpx;
-}
-
-.ml-30 {
-    margin-left: 30rpx;
-}
-
-.mr-30 {
-    margin-right: 30rpx;
-}
-
-.mt-30 {
-    margin-top: 30rpx;
-}
-
-.mb-30 {
-    margin-bottom: 30rpx;
-}
-
-.pd-30 {
-    padding: 30rpx;
-}
-
-.pl-30 {
-    padding-left: 30rpx;
-}
-
-.pr-30 {
-    padding-right: 30rpx;
-}
-
-.pt-30 {
-    padding-top: 30rpx;
-}
-
-.pb-30 {
-    padding-bottom: 30rpx;
-}
-
-.mg-24 {
-    margin: 24rpx;
-}
-
-.ml-24 {
-    margin-left: 24rpx;
-}
-
-.mr-24 {
-    margin-right: 24rpx;
-}
-
-.mt-24 {
-    margin-top: 24rpx;
-}
-
-.mb-24 {
-    margin-bottom: 24rpx;
-}
-
-.pd-24 {
-    padding: 24rpx;
-}
-
-.pl-24 {
-    padding-left: 24rpx;
-}
-
-.pr-24 {
-    padding-right: 24rpx;
-}
-
-.pt-24 {
-    padding-top: 24rpx;
-}
-
-.pb-24 {
-    padding-bottom: 24rpx;
-}
-
 .flex-1 {
     flex: 1;
 }
 
 .bg-fff {
     background-color: white;
-}
-
-.border-bottom-32 {
-    border-bottom: 16rpx #f4f4f4 solid;
-}
-
-.border-bottom-1 {
-    border-bottom: 1rpx #e5e5e5 solid;
 }
 
 .text-line-1 {
