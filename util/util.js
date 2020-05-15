@@ -78,12 +78,14 @@ function post(info) {
  * 判断是否是iPhone X/iPhone XS等带有下巴的iPhone手机
  */
 function isIpx() {
-  var systemInfo = wx.getSystemInfoSync();
-  console.log(systemInfo.safeArea.top == 44 ? 'isIpx' : 'notIpx')
-  if (systemInfo.safeArea.top == 44) {
-      return true;
-  }
-  return false;
+    var systemInfo = wx.getSystemInfoSync();
+    if (systemInfo.safeArea) {
+        console.log(systemInfo.safeArea.top == 44 ? 'isIpx' : 'notIpx')
+        if (systemInfo.safeArea.top == 44) {
+            return true;
+        }
+    }
+    return false;
 }
 
 module.exports = {
