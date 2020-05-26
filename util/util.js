@@ -1,3 +1,4 @@
+import api from "./api";
 function formatUri(dataset) {
   let uri = dataset.uri + '?';
   for (const key in dataset) {
@@ -88,7 +89,7 @@ function isIpx() {
     return false;
 }
 
-module.exports = {
+export default {
   formatUri,
   navigate,
   post,
