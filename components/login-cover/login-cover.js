@@ -33,10 +33,19 @@ Component({
      */
     methods: {
         getUserInfo(e) {
-
+            console.log(e);
+            if (e.detail.errMsg.indexOf("ok") == -1) {
+                return;
+            }
+            wx.showLoading();
             let that = this;
             util.login(e, function () {
+                wx.hideLoading();
+                wx.showToast({
+                  title: '登录成功',
+                })
                 that.judgeShow();
+                that.triggerEvent('complete');
             });
         },
         getPhoneNumber(e) {
@@ -46,12 +55,13 @@ Component({
               complete: (res) => {
                 let code = res.code;
                 console.log(e.detail);
-                
+                wx.showLoading();
                 util.loginPhone({
                     code,
                     iv: e.detail.iv,
                     encryptedData: e.detail.encryptedData,
                 }, function () {
+                    wx.showLoading();
                     that.judgeShow();
                 })
               },
