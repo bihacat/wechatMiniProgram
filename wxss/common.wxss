@@ -102,17 +102,32 @@
 .cl-fff {
     color: #ffffff;
 }
-
+.br-4 {
+    border-radius: 4rpx;
+}
 .br-8 {
     border-radius: 8rpx;
 }
-
+.br-12 {
+    border-radius: 12rpx;
+}
 .br-16 {
     border-radius: 16rpx;
 }
-
+.br-20 {
+    border-radius: 20rpx;
+}
+.br-24 {
+    border-radius: 24rpx;
+}
+.br-28 {
+    border-radius: 28rpx;
+}
 .br-32 {
     border-radius: 32rpx;
+}
+.br-50 {
+    border-radius: 50%;
 }
 
 .d-flex {
