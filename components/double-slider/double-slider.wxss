@@ -1,0 +1,12 @@
+/* components/double-slider/double-slider.wxss */
+@import "/app.wxss";
+
+.min {
+    position: absolute;
+}
+.max {
+    position: absolute;
+}
+.center-line {
+    background-color: #007AFF;
+}

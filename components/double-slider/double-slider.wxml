@@ -1,0 +1,23 @@
+<!--components/double-slider/double-slider.wxml-->
+
+<view class="p-relative double-slider-container" style="height: 40px;" >
+    <slider class="p-absolute" 
+        value="{{min_value}}"
+        min="{{min}}" 
+        max="{{min_max}}" 
+        step="{{step}}"
+        activeColor="#ddd" 
+        backgroundColor="#007AFF"
+        bindchanging="minchange"
+        style="right: {{min_right}}px; left: 0; z-index: 2;"></slider>
+    <view class="p-absolute bg-blue" style="top: 18px; left:{{max_left}}px; right:{{min_right}}px; height: 2px;"></view>
+    <slider class="p-absolute" 
+        value="{{max_value}}" 
+        min="{{max_min}}" 
+        max="{{max}}" 
+        step="{{step}}"
+        activeColor="#007AFF" 
+        backgroundColor="#ddd"
+        bindchanging="maxchange"
+        style="left: {{max_left}}px; right: 0; z-index: 2"></slider>
+</view>
